@@ -1,10 +1,11 @@
+/* color variables for the various elements on the page */
 :root{
     --stickyyellow: #FEFF9C;
     --lightstickyyellow: #F9F9D0;
     --inkred: #AC3235;
 }
 
-
+/*general statement to keep a elements from being blue and underlined*/
 a {
     color:inherit;
     text-decoration: none;
@@ -13,7 +14,7 @@ a {
 body {
     background: var(--lightstickyyellow);
 }
-
+/*adjusts the nametag image's size and rotation*/
 .headerimg{
     width: 310.975px;
     height: 211.711px;
@@ -28,17 +29,20 @@ header{
     display: flex;
     position:sticky;
     background: var(--lightstickyyellow);
+    /*adds drop shadow below the header*/
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 header h1 {
+    /*adjusts h1 element's size and rotation*/
     display: flex;
     width: 249.484px;
     height: 78.807px;
     transform: rotate(-6.911deg);
     flex-direction: column;
 
-    color: #AC3235;
+    /*adjusts h1 element's position and formatting*/
+    color: var(--inkred);
     text-align: center;
     font-family: Dela Gothic One;
     font-size: 24px;
@@ -49,7 +53,7 @@ header h1 {
     background:none;
     font-family: cursive;
 }
-
+/*adjusts position and color of secondary h1 element creating the shadow effect*/
 #h1-shadow {
     left: 32.58px;
     color: #C76E70;
@@ -69,32 +73,33 @@ nav ul {
 
   nav ul li {
     background-color: white;
+    color:var(--inkred);
+    border-radius: 25px;
     width: 139px;
     height: 57px;
-    flex-shrink: 0;
+    
+    /*Spacing between, and position of nav placed in the bottom left of header*/
     margin: 11px;
-    color:var(--inkred);
     display:inline-flex;
     justify-content: center;
     align-items: center;
   }
   nav ul li a {
-    color: #AC3235;
-    font-family: Just Another Hand;
-    font-size: 36px;
+    color: var(--inkred);
+    font-family: Just Another Hand, cursive;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     background: none;
   }
-
+  /*Places a gif over the background of the nav box when hovered to border the menu option*/
   nav ul li:hover{
     background-image: url(images/redpencircle.gif);
     background-repeat: no-repeat;
     background-size: 100% 85%;
     background-position: center;
   }
-
+/*adjustments for the hero image I made for the page*/
 .hero {
     height: 200px;
     width: 100%;
@@ -124,7 +129,7 @@ nav ul {
 }
 
 footer{
-
+    width:auto;
 }
 footer p::before {
     content: "\00a9";
