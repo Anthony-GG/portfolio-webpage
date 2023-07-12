@@ -2,7 +2,10 @@
 :root{
     --stickyyellow: #FEFF9C;
     --lightstickyyellow: #F9F9D0;
+    --stickypink:#ff7eb9;
+    --lightstickypink:#f8d1e2;
     --inkred: #AC3235;
+    --lightinkred: #E62E1C;
 }
 
 /*general statement to keep a elements from being blue and underlined*/
@@ -14,6 +17,8 @@ a {
 body {
     background: var(--lightstickyyellow);
 }
+
+/*START OF HEADER SECTION CSS*/
 /*adjusts the nametag image's size and rotation*/
 .headerimg{
     width: 310.975px;
@@ -99,28 +104,71 @@ nav ul {
     background-size: 100% 85%;
     background-position: center;
   }
+
+/*START OF HERO SECTION CSS*/  
 /*adjustments for the hero image I made for the page*/
 .hero {
     height: 200px;
     width: 100%;
-    margin-bottom: 25px;
     background: var(--stickyyellow);
     display:flex;
     justify-content: center;
     align-items: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .hero img {
     height: 200px;
 }
 
-.about{
-    border-radius: 5px solid black;
+/*setting the properties for all h2 elements on the page*/
+h2{
+    font-family: Lato, sans-serif;
+    font-size: 32px;
+    margin-top: 0px;
 }
 
+/*adds scissor icon before and after any h2 element on the page*/
+h2::before{
+    content: url(images/scissors_clipart.png);
+}
+h2::after{
+    content: url(images/scissors_clipart_flipped.png);
+}
 
+/*START OF ABOUT SECTION CSS*/
+/*Position adjustor for the about section*/
+.about{
+    text-align: center;
+    padding-bottom: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: Lato, sans-serif;
+}
+#about-content p{
+    margin: 5px 17.2%;
+}
+#headshot{
+    width: 170px;
+    border-radius: 100px;
+    border:10px solid var(--lightinkred);
+    border-style: dashed;
+}
+
+.work{
+    background-color: var(--lightstickypink);
+    text-align: center;
+}
+
+.projects{
+    display: inline-flex;
+    justify-content: space-evenly;
+}
 
 .projects figure img {
-    width: 25%;
+    width: 75%;
+    border-radius: 100px;
+    border:10px solid var(--lightinkred);
+    border-style: dashed;
 }
 
 .social-media-icons {
