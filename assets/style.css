@@ -3,7 +3,9 @@
     --stickyyellow: #FEFF9C;
     --lightstickyyellow: #F9F9D0;
     --stickypink:#ff7eb9;
-    --lightstickypink:#f8d1e2;
+    --lightstickypink:#f5c5da;
+    --stickyblue: #7afcff;
+    --lightstickyblue:#c2f4f5;
     --inkred: #AC3235;
     --lightinkred: #E62E1C;
 }
@@ -122,7 +124,7 @@ nav ul {
 
 /*setting the properties for all h2 elements on the page*/
 h2{
-    font-family: Lato, sans-serif;
+    font-family: cursive;
     font-size: 32px;
     margin-top: 0px;
 }
@@ -143,9 +145,12 @@ h2::after{
     padding-left: 15px;
     padding-right: 15px;
     font-family: Lato, sans-serif;
+    font-weight: 600;
+    background-color: var(--lightstickypink);
 }
 #about-content p{
-    margin: 5px 17.2%;
+    max-width: 600px;
+    margin: 15px auto;
 }
 #headshot{
     width: 170px;
@@ -155,7 +160,7 @@ h2::after{
 }
 
 .work{
-    background-color: var(--lightstickypink);
+    background-color: var(--lightstickyblue);
     text-align: center;
 }
 
@@ -167,7 +172,7 @@ h2::after{
 .projects figure img {
     width: 75%;
     border-radius: 100px;
-    border:10px solid var(--lightinkred);
+    border:3px solid var(--lightinkred);
     border-style: dashed;
 }
 
