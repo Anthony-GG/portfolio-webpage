@@ -147,6 +147,8 @@ h2::after{
     font-family: Lato, sans-serif;
     font-weight: 600;
     background-color: var(--lightstickypink);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 #about-content p{
     max-width: 600px;
@@ -158,23 +160,32 @@ h2::after{
     border:10px solid var(--lightinkred);
     border-style: dashed;
 }
-
+/*START OF WORK SECTION CSS*/
 .work{
     background-color: var(--lightstickyblue);
     text-align: center;
 }
-
 .projects{
     display: inline-flex;
     justify-content: space-evenly;
 }
-
 .projects figure img {
-    width: 75%;
+    width: 100%;
     border-radius: 100px;
     border:3px solid var(--lightinkred);
     border-style: dashed;
+    margin: 10px auto;
 }
+.projects figure figcaption {
+    font-size: 22px;
+    font-family: fantasy;
+}
+.projects p{
+    max-width: 250px;
+    margin: 10px auto;
+    font-weight: 700;
+}
+
 
 .social-media-icons {
     width: 72px;
