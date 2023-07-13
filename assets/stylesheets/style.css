@@ -110,7 +110,7 @@ nav ul {
 /*START OF HERO SECTION CSS*/  
 /*adjustments for the hero image I made for the page*/
 .hero {
-    height: 200px;
+    height: 400px;
     width: 100%;
     background: var(--stickyyellow);
     display:flex;
@@ -120,7 +120,9 @@ nav ul {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .hero img {
-    height: 200px;
+    height: 400px;
+    /*had to add a margin to my image because centering things is hard :(*/
+    margin-right: 40px;
 }
 
 /*setting the properties for all h2 elements on the page*/
