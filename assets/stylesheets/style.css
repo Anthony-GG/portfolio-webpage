@@ -128,6 +128,7 @@ h2{
     font-family: cursive;
     font-size: 38px;
     margin-top: 0px;
+    margin-bottom:5px;
 }
 
 /*adds scissor icon before and after any h2 element on the page*/
@@ -172,7 +173,7 @@ h2::after{
     justify-content: space-evenly;
 }
 .projects figure img {
-    width: 100%;
+    width: 75%;
     border-radius: 100px;
     border:3px solid var(--lightinkred);
     border-style: dashed;
@@ -181,12 +182,22 @@ h2::after{
 .projects figure figcaption {
     font-size: 22px;
     font-family: fantasy;
+    margin-top: 10px;
+    margin-bottom: 15px;
 }
 .projects p{
     max-width: 250px;
     margin: 10px auto;
     font-weight: 700;
 }
+#horison figcaption {
+    font-size: 28px;
+}
+#horison img {
+    width: 100%;
+    flex-grow: 1;
+}
+
 /*START OF CONTACT SECTION CSS*/
 .contact{
     background-color: var(--stickygreen);
