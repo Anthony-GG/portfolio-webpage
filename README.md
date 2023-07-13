@@ -31,6 +31,6 @@ The following image shows the web application's appearance and functionality:
 
  ## License
 
-Please reference the **LICENSE.MD** inside of the repository.
+Please reference the **LICENSE.MD** file inside of the repository.
 
 ---
