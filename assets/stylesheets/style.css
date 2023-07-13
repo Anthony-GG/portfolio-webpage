@@ -252,7 +252,7 @@ footer p::before {
     .projects{
         display: inline;
         align-items: flex-start;
-        padding: 30%;
+        padding: 30%; /*if this is raised any higher, the social media links will not work anymore*/
         min-width: fit-content;
         min-height: fit-content;
     }
