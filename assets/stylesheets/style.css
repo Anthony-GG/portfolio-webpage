@@ -38,8 +38,6 @@ header{
     display: flex;
     position:sticky;
     background: var(--lightstickyyellow);
-    /*adds drop shadow below the header*/
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 header h1 {
@@ -103,7 +101,7 @@ nav ul {
   }
   /*Places a gif over the background of the nav box when hovered to border the menu option*/
   nav ul li:hover{
-    background-image: url(images/redpencircle.gif);
+    background-image: url(../images/redpencircle.gif);
     background-repeat: no-repeat;
     background-size: 100% 85%;
     background-position: center;
@@ -118,6 +116,7 @@ nav ul {
     display:flex;
     justify-content: center;
     align-items: center;
+    /*adds drop shadow under header*/
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .hero img {
@@ -127,20 +126,20 @@ nav ul {
 /*setting the properties for all h2 elements on the page*/
 h2{
     font-family: cursive;
-    font-size: 32px;
+    font-size: 38px;
     margin-top: 0px;
 }
 
 /*adds scissor icon before and after any h2 element on the page*/
 h2::before{
-    content: url(images/scissors_clipart.png);
+    content: url(../images/scissors_clipart.png);
 }
 h2::after{
-    content: url(images/scissors_clipart_flipped.png);
+    content: url(../images/scissors_clipart_flipped.png);
 }
 
 /*START OF ABOUT SECTION CSS*/
-/*Position adjustor for the about section*/
+/*Position adjustor for the ABOUT section*/
 .about{
     text-align: center;
     padding-bottom: 35px;
@@ -148,8 +147,8 @@ h2::after{
     padding-right: 15px;
     font-weight: 600;
     background-color: var(--lightstickypink);
-
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    /*adds drop shadow under ABOUT*/
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 #about-content p{
     max-width: 600px;
@@ -165,6 +164,7 @@ h2::after{
 .work{
     background-color: var(--lightstickyblue);
     text-align: center;
+    /*adds drop shadow under WORK section*/
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .projects{
@@ -187,11 +187,13 @@ h2::after{
     margin: 10px auto;
     font-weight: 700;
 }
-
+/*START OF CONTACT SECTION CSS*/
 .contact{
     background-color: var(--stickygreen);
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 35px;
+    /*adds drop shadow under CONTACT section*/
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .contact p{
     max-width: 600px;
@@ -199,21 +201,26 @@ h2::after{
     font-size: 22px;
     font-weight: 600;
 }
-
-
+#button{
+    background-color: var(--lightstickygreen);
+    font-weight: 700;
+}
 .social-media-group {
     display:flex;
     justify-content: center;
     list-style: none;
-    margin-top: 50px;
-    margin-bottom: 70px;
+    background-image: url(../images/bulletinboard.jpg);
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
 }
-
 .social-media-icons {
     width: 50px;
     height: 50px;
-    margin: auto 11px;
+    margin: 50px 24px;
+    /* margin: auto 11px; */
 }
+
 
 footer{
     width:auto;
