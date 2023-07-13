@@ -121,8 +121,6 @@ nav ul {
 }
 .hero img {
     height: 400px;
-    /*had to add a margin to my image because centering things is hard :(*/
-    margin-right: 40px;
 }
 
 /*setting the properties for all h2 elements on the page*/
@@ -245,15 +243,46 @@ footer p::before {
     content: "\00a9";
 }
 
-/*viewport adjustments for tablets or large phones*/
-@media screen and (max-width: 992px) {
- 
+
+/*viewport adjustments for standard tablets*/
+@media only screen and (max-width: 1024px) {
+    .hero img{
+        width: 80vw;
+    }
+    .projects{
+        display: inline;
+        align-items: flex-start;
+        padding: 30%;
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+    .projects figure figcaption {
+        font-size: 42px;
+        font-family: fantasy;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    #horison figcaption {
+        font-size: 42px;
+    }
 }
-/*viewport adjustments for standard phones*/
-@media screen and (max-width: 768px) {
- 
-}
-/*viewport adjustments for small phones*/
-@media screen and (max-width: 576px) {
- 
+/*viewport adjustments for phones*/
+@media only screen and (max-width: 768px) {    
+    .hero img{
+        width: 80vw;
+    }
+
+    .projects{
+        display: inline;
+        align-items: flex-start;
+        padding: 30%;
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+    .projects figure figcaption {
+        font-size: 30px;
+        font-family: fantasy;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
 }
