@@ -6,6 +6,8 @@
     --lightstickypink:#f5c5da;
     --stickyblue: #7afcff;
     --lightstickyblue:#c2f4f5;
+    --stickygreen: #B3D358;
+    --lightstickygreen:#b9ca86;
     --inkred: #AC3235;
     --lightinkred: #E62E1C;
 }
@@ -93,7 +95,7 @@ nav ul {
   }
   nav ul li a {
     color: var(--inkred);
-    font-family: Just Another Hand, cursive;
+    font-family: cursive;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -144,7 +146,6 @@ h2::after{
     padding-bottom: 35px;
     padding-left: 15px;
     padding-right: 15px;
-    font-family: Lato, sans-serif;
     font-weight: 600;
     background-color: var(--lightstickypink);
 
@@ -164,6 +165,7 @@ h2::after{
 .work{
     background-color: var(--lightstickyblue);
     text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .projects{
     display: inline-flex;
@@ -186,14 +188,37 @@ h2::after{
     font-weight: 700;
 }
 
+.contact{
+    background-color: var(--stickygreen);
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contact p{
+    max-width: 600px;
+    margin: 15px auto;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+
+.social-media-group {
+    display:flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 50px;
+    margin-bottom: 70px;
+}
 
 .social-media-icons {
-    width: 72px;
-    height: 72px;
+    width: 50px;
+    height: 50px;
+    margin: auto 11px;
 }
 
 footer{
     width:auto;
+    text-align: center;
+    font-weight: bold;
 }
 footer p::before {
     content: "\00a9";
