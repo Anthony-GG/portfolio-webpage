@@ -204,6 +204,7 @@ h2::after{
 #button{
     background-color: var(--lightstickygreen);
     font-weight: 700;
+/*START OF CONTACT:SOCIAL MEDIA SUB-SECTION CSS*/
 }
 .social-media-group {
     display:flex;
@@ -218,15 +219,28 @@ h2::after{
     width: 50px;
     height: 50px;
     margin: 50px 24px;
-    /* margin: auto 11px; */
 }
 
-
+/*START OF FOOTER-SECTION CSS*/
 footer{
     width:auto;
     text-align: center;
     font-weight: bold;
 }
+/*Adds Copywrite symbol to footer text*/
 footer p::before {
     content: "\00a9";
+}
+
+/*viewport adjustments for tablets or large phones*/
+@media screen and (max-width: 992px) {
+ 
+}
+/*viewport adjustments for standard phones*/
+@media screen and (max-width: 768px) {
+ 
+}
+/*viewport adjustments for small phones*/
+@media screen and (max-width: 576px) {
+ 
 }
