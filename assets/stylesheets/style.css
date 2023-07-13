@@ -41,14 +41,14 @@ header{
 }
 
 header h1 {
-    /*adjusts h1 element's size and rotation*/
+    /*adjusts h1 element's position and rotation*/
     display: flex;
     width: 249.484px;
     height: 78.807px;
     transform: rotate(-6.911deg);
     flex-direction: column;
 
-    /*adjusts h1 element's position and formatting*/
+    /*adjusts h1 element's size and formatting*/
     color: var(--inkred);
     text-align: center;
     font-family: Dela Gothic One;
